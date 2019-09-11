@@ -1,0 +1,19 @@
+---
+name: Sample
+description: "Rule which sends an email when an email from johndoe@gmail.com is received"
+pack: newemail
+enabled: false
+trigger:
+  type: newemail.imap.message
+  parameters: {}
+criteria:
+  trigger.from:
+    pattern: ogsingru@gmail.com
+    type: contains
+action:
+  ref: newemail.send_email
+  parameters:
+    body: 'We received an email'
+    to: ogsingru@gmail.com
+    from: omkarsingru21@gmail.com
+    subject: 'Email Received'
