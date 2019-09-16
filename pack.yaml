@@ -1,5 +1,5 @@
 ---
-ref: newemail1234
+ref: email
 name: email123
 description: E-Mail Actions/Sensors for StackStorm
 keywords:
