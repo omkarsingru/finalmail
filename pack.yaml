@@ -1,9 +1,9 @@
 ---
-ref: newemail
-name: email
+ref: newemail234
+name: email123
 description: E-Mail Actions/Sensors for StackStorm
 keywords:
-  - email
+  - email123
   - messaging
   - imap
 version: 1.1.3
