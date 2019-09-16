@@ -1,17 +1,17 @@
 ---
 name: email
 description: "Rule which sends an email when an email from johndoe@gmail.com is received"
-pack: email123
+pack: email
 enabled: false
 trigger:
-  type: email234.imap.message
+  type: email.imap.message
   parameters: {}
 criteria:
   trigger.from:
     pattern: ogsingru@gmail.com
     type: contains
 action:
-  ref: email123.send_email
+  ref: email.send_email
   parameters:
     body: 'We received an email'
     to: ogsingru@gmail.com
